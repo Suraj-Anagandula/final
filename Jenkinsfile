@@ -25,7 +25,7 @@ pipeline {
             steps {
                 sh 'docker stop register || true'
                 sh 'docker rm register || true'
-                sh 'docker run -d -p 3000:3000 --name register register'
+                sh 'docker run -d -p 4000:4000 --name register register'
             }
         }
     }
