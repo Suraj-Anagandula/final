@@ -28,5 +28,11 @@ pipeline {
                 sh 'docker run -d -p 4000:4000 --name register register'
             }
         }
+        stage('Kubernetes'){
+            steps{
+                sh ''
+            }
+        }
+        
     }
 }
